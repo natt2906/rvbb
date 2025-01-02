@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Site vitrine solaire moderne et responsive avec animations">
+  <!-- Viewport pour le responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RDBB - Version Avancée</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" 
+    rel="stylesheet"
+  >
+
+  <!-- Swiper CSS (pour le slider) -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- AOS CSS (pour les animations au scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+  <!-- Fichier CSS principal (verts + box design + responsive) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header class="header">
+    <nav class="nav container">
+      <!-- Logo -->
+      <div class="logo">
+        <h1>RDBB</h1>
+      </div>
+
+      <!-- Menu principal (links) -->
+      <ul class="nav-links">
+        <li><a href="#accueil" class="nav-link">Accueil</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#realisation" class="nav-link">Réalisations</a></li>
+        <li><a href="#apropos" class="nav-link">À propos</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Bouton Burger pour le mobile -->
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SECTION HERO -->
+  <section id="accueil" class="hero" 
+           style="background-image: url('assets/1014-ouvrier-dans-feu-pres-panneaux-solaires.jpg');">
+    <div class="hero-overlay">
+      <div class="hero-content" data-aos="fade-up">
+        <h2 class="hero-title">La solution solaire à portée de main</h2>
+        <p>Des panneaux solaires de qualité pour un avenir plus vert et économique.</p>
+        <a href="#services" class="btn btn-primary">Découvrir nos services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION SERVICES -->
+  <section id="services" class="services" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <h2>Nos Services</h2>
+      <p>
+        Spécialisée dans l’énergie solaire et les solutions photovoltaïques, 
+        RDBB vous propose un accompagnement complet pour concrétiser votre projet, 
+        réduire votre empreinte carbone et réaliser des économies sur vos factures d’électricité.
+      </p>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-item box" data-aos="zoom-in" data-aos-delay="100">
+          <img src="assets/aides-panneaux-solaires-entreprises-scaled.jpg" alt="Service 1" />
+          <h3>Installation de Panneaux</h3>
+          <p>
+            Nous vous accompagnons de A à Z pour l’installation de vos panneaux solaires, 
+            avec un suivi complet et personnalisé. Notre équipe étudie la configuration 
+            de votre toiture, la puissance souhaitée et les aides disponibles, 
+            pour une installation clé en main.
+          </p>
+          <a href="#" class="btn btn-secondary">En savoir plus</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-item box" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/comment-ameliorer-le-rendement-dun-panneau-solaire-scaled.jpg" alt="Service 2" />
+          <h3>Entretien & Maintenance</h3>
+          <p>
+            Nos équipes se chargent de l’entretien régulier et de la maintenance 
+            de vos équipements solaires. Nettoyage, vérification du rendement, 
+            détection précoce de pannes... Nous veillons à ce que votre installation 
+            reste performante sur le long terme.
+          </p>
+          <a href="#" class="btn btn-secondary">En savoir plus</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-item box" data-aos="zoom-in" data-aos-delay="300">
+          <img src="assets/fonctionnement-panneau-solaire-le-guide-la-maison-saint-gobain-01.jpg" alt="Service 3" />
+          <h3>Audit & Conseil</h3>
+          <p>
+            Nous réalisons un audit complet de votre consommation énergétique 
+            et vous conseillons sur les meilleures solutions solaires. 
+            Optimisez votre production, bénéficiez des aides financières 
+            et passez à l’autoconsommation en toute sérénité.
+          </p>
+          <a href="#" class="btn btn-secondary">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION REALISATIONS (SLIDER SWIPER) -->
+  <section id="realisation" class="realisation" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <h2>Nos Réalisations</h2>
+      <p>
+        Découvrez nos projets solaires, qu’il s’agisse d’installations résidentielles 
+        ou de parcs photovoltaïques. Chaque réalisation témoigne de notre savoir-faire 
+        et de notre engagement pour la qualité.
+      </p>
+
+      <!-- Structure du slider Swiper -->
+      <div class="swiper-container" style="margin-top: 2rem;">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <img src="assets/panneaux-photovoltaiques-pv-instllation-sur-toit.webp" alt="Projet 1">
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <img src="assets/1014-ouvrier-dans-feu-pres-panneaux-solaires.jpg" alt="Projet 2">
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <img src="assets/aides-panneaux-solaires-entreprises-scaled.jpg" alt="Projet 3">
+            </div>
+          </div>
+          <!-- Ajoutez autant de slides que nécessaire -->
+        </div>
+        <!-- Flèches de navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Pagination (pastilles) -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION À PROPOS -->
+  <section id="apropos" class="about" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <h2>À propos de RDBB</h2>
+      <div class="box">
+        <p>
+          Depuis sa création, RDBB s’est donné pour mission de mettre l’énergie solaire 
+          à la portée de tous. Notre équipe réunit des spécialistes du photovoltaïque 
+          et des énergies renouvelables, déterminés à agir pour un monde plus vert 
+          et plus solidaire.
+        </p>
+        <p>
+          Qu’il s’agisse d’un projet de panneaux solaires pour une maison individuelle 
+          ou d’une installation professionnelle, nous plaçons l’humain au cœur 
+          de nos démarches. De l’étude de faisabilité à la maintenance, 
+          nous restons à vos côtés pour une expérience client irréprochable.
+        </p>
+        <h3>Nos valeurs</h3>
+        <ul>
+          <li><strong>Innovation :</strong> toujours à l’affût des nouvelles technologies solaires.</li>
+          <li><strong>Transparence :</strong> des devis clairs et aucune mauvaise surprise.</li>
+          <li><strong>Écoute :</strong> chaque client est unique, nous adaptons nos solutions.</li>
+          <li><strong>Responsabilité :</strong> nous privilégions des matériaux durables et écologiques.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION FAQ -->
+  <section id="faq" class="faq" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <h2>Foire aux questions (FAQ)</h2>
+      <!-- Chaque question dans une .box -->
+      <div class="box" style="margin-bottom: 1.5rem;">
+        <h3>1. Combien coûte l’installation de panneaux solaires ?</h3>
+        <p>
+          Le budget varie selon la puissance, la surface disponible et le matériel choisi. 
+          Généralement, on compte entre 5 000 € et 15 000 € pour un projet résidentiel. 
+          Nous proposons un devis personnalisé pour chaque cas.
+        </p>
+      </div>
+
+      <div class="box" style="margin-bottom: 1.5rem;">
+        <h3>2. Quelle est la durée de vie d’un panneau solaire ?</h3>
+        <p>
+          Les panneaux photovoltaïques performants ont une durée de vie 
+          de 25 à 30 ans. L’entretien régulier contribue à prolonger leur efficacité.
+        </p>
+      </div>
+
+      <div class="box" style="margin-bottom: 1.5rem;">
+        <h3>3. Peut-on stocker l’énergie produite ?</h3>
+        <p>
+          Oui, grâce à des batteries, vous pouvez conserver l’électricité 
+          produite en journée pour la consommer la nuit ou en période 
+          de faible ensoleillement. 
+        </p>
+      </div>
+
+      <div class="box">
+        <h3>4. Quelles aides financières sont disponibles ?</h3>
+        <p>
+          Il existe diverses subventions et primes à l’autoconsommation, 
+          ainsi que des crédits d’impôts dans certaines régions. Nous vous 
+          guidons pour réduire le coût global de votre projet.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section id="contact" class="contact" data-aos="fade-up">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <p>
+        Vous souhaitez en savoir plus sur l’énergie solaire ou demander un devis ? 
+        Remplissez le formulaire ci-dessous et notre équipe vous répondra 
+        dans les plus brefs délais.
+      </p>
+      <form class="contact-form">
+        <div class="form-row">
+          <input type="text" name="nom" placeholder="Votre nom" required>
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Votre email" required>
+        </div>
+        <div class="form-row">
+          <textarea name="message" placeholder="Votre message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" data-aos="fade-up">
+    <div class="container footer-content">
+      <p class="footer-logo">&copy; 2024 RDBB</p>
+      <p class="footer-text">
+        Des solutions solaires pour un avenir plus vert. 
+        Faites confiance à RDBB pour votre installation photovoltaïque 
+        et rejoignez le mouvement des énergies renouvelables.
+      </p>
+      <ul class="footer-links">
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+        <li><a href="#contact">Nous contacter</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- GSAP (pour les animations si besoin) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" 
+          integrity="sha512-ywTecTfWWif/VXopp/lS/l823bL5ylDb+Jgco38EbcUoLaZfXqW218jJ+8lUsopA+xlksjKUZInft+AsnYBB1A==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Script JS principal (pour le burger menu / init Swiper / AOS) -->
+  <script src="script.js"></script>
+</body>
+</html>
